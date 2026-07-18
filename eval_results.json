@@ -1,0 +1,58 @@
+[
+  {
+    "question": "diethyl phthalate guvenli mi",
+    "expected": "flagged",
+    "got": "flagged",
+    "correct": true,
+    "summary": "Diethyl phthalate is flagged due to phthalate and endocrine concerns."
+  },
+  {
+    "question": "retinyl palmitate kullanabilir miyim",
+    "expected": "restricted",
+    "got": "restricted",
+    "correct": true,
+    "summary": "Retinyl Palmitate, A vitamini esteri/daha hafif bir formudur ve rosacea ile akne gibi durumlarla ilişkili olarak 'restricted' risk seviyesine sahiptir."
+  },
+  {
+    "question": "homosalate icerikli gunes kremi riskli mi",
+    "expected": "restricted",
+    "got": "restricted",
+    "correct": true,
+    "summary": "Homosalate, a UV filter, is classified as 'restricted' due to its endocrine mechanism. Its use is limited to a maximum concentration of 7.34%. It is noted to be relevant to conditions such as rosacea and melasma."
+  },
+  {
+    "question": "propylparaben endokrin sorunu var mi",
+    "expected": "flagged",
+    "got": "flagged",
+    "correct": true,
+    "summary": "Propylparaben, endokrin sorunlara yol açma potansiyeli nedeniyle 'flagged' olarak belirtilmektedir."
+  },
+  {
+    "question": "limonene alerjik mi",
+    "expected": "flagged",
+    "got": "flagged",
+    "correct": true,
+    "summary": "Limonene, özellikle oksitlenmiş formuyla, alerjik bir terpen olarak kabul edilir ve roza ile atopik dermatit gibi durumlarla ilişkilendirilmiştir. Koku alerjeni olarak işaretlenmiştir."
+  },
+  {
+    "question": "salisilik asit rozasea icin guvenli mi",
+    "expected": "restricted",
+    "got": "restricted",
+    "correct": true,
+    "summary": "Salisilik Asit, rozasea ile ilgili durumlar listesinde yer almakta olup, risk seviyesi 'restricted' olarak belirtilmiştir. Etki mekanizması BHA/keratolytic'tir."
+  },
+  {
+    "question": "niacinamide rozasea icin iyi mi",
+    "expected": "flagged",
+    "got": "flagged",
+    "correct": true,
+    "summary": "Kayıtlara göre Niacinamide, rozasea ile ilişkili olup, %4'ten fazla kızarma riski (flushing risk) mekanizması nedeniyle 'flagged' (işaretlenmiş) risk seviyesindedir. Bu, rozasea için potansiyel bir yan etki veya olumsuz durum anlamına gelebilir."
+  },
+  {
+    "question": "hic alakasiz bir soru: bugun hava nasil",
+    "expected": "unknown",
+    "got": "unknown",
+    "correct": true,
+    "summary": "literatur veritabaninda eslesme yok"
+  }
+]
