@@ -2,6 +2,9 @@ import os
 import sys
 import requests
 from sqlalchemy import create_engine, text
+from dotenv import load_dotenv
+load_dotenv()
+
 
 DB_URL = "postgresql://postgres:comorbid123@localhost:5432/comorbid"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
