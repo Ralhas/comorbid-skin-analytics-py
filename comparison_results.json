@@ -1,0 +1,153 @@
+{
+  "v3": [
+    {
+      "question": "diethyl phthalate guvenli mi",
+      "expected": "flagged",
+      "got": "flagged",
+      "correct": true,
+      "latency_sec": 1.91,
+      "rate_limit_wait_sec": 20.0,
+      "api_calls": 1,
+      "conflict_detected": false
+    },
+    {
+      "question": "retinyl palmitate kullanabilir miyim",
+      "expected": "restricted",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 121.13,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false
+    },
+    {
+      "question": "propylparaben endokrin sorunu var mi",
+      "expected": "flagged",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 121.24,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false
+    },
+    {
+      "question": "niacinamide rozasea icin iyi mi",
+      "expected": "flagged",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 121.18,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false
+    },
+    {
+      "question": "hic alakasiz bir soru: bugun hava nasil",
+      "expected": "unknown",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 1792.81,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false
+    },
+    {
+      "question": "salicylic acid ve retinyl palmitate'i birlikte kullanabilir miyim",
+      "expected": "restricted",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 121.13,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false
+    },
+    {
+      "question": "diethyl phthalate ve propylparaben ayni urunde olursa sorun olur mu",
+      "expected": "flagged",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 121.14,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false
+    }
+  ],
+  "v4": [
+    {
+      "question": "diethyl phthalate guvenli mi",
+      "expected": "flagged",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 121.08,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false,
+      "verified": null
+    },
+    {
+      "question": "retinyl palmitate kullanabilir miyim",
+      "expected": "restricted",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 121.03,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false,
+      "verified": null
+    },
+    {
+      "question": "propylparaben endokrin sorunu var mi",
+      "expected": "flagged",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 123.21,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false,
+      "verified": null
+    },
+    {
+      "question": "niacinamide rozasea icin iyi mi",
+      "expected": "flagged",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 1028.57,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false,
+      "verified": null
+    },
+    {
+      "question": "hic alakasiz bir soru: bugun hava nasil",
+      "expected": "unknown",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 357.31,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false,
+      "verified": null
+    },
+    {
+      "question": "salicylic acid ve retinyl palmitate'i birlikte kullanabilir miyim",
+      "expected": "restricted",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 127.3,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false,
+      "verified": null
+    },
+    {
+      "question": "diethyl phthalate ve propylparaben ayni urunde olursa sorun olur mu",
+      "expected": "flagged",
+      "got": "ERROR",
+      "correct": false,
+      "latency_sec": 121.2,
+      "rate_limit_wait_sec": 0,
+      "api_calls": 1,
+      "conflict_detected": false,
+      "verified": null
+    }
+  ]
+}

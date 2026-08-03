@@ -58,10 +58,18 @@ def _ask_anthropic(question):
     raise NotImplementedError("Anthropic API anahtari henuz tanimli degil.")
 
 
+def _ask_deepseek(question: str) -> dict:
+    raise NotImplementedError(
+        "DeepSeek API anahtari henuz tanimli degil. "
+        "DEEPSEEK_API_KEY eklendiginde bu fonksiyon doldurulacak."
+    )
+
+
 PROVIDERS = {
     "gemini": _ask_gemini,
     "openai": _ask_openai,
     "anthropic": _ask_anthropic,
+    "deepseek": _ask_deepseek,
 }
 
 
