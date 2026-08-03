@@ -109,3 +109,21 @@ python compare_v3_v4.py         # v3 vs v4 comparison
 python test_mcp_client.py       # end-to-end MCP tool call
 ```
 ```
+
+## Limitations
+
+- **Eval set is small (7 questions).** The 7/7 vs 5/7 comparison is
+  directional, not statistically rigorous. A larger benchmark
+  (50-100 questions) would be needed to make a stronger claim.
+- **Deterministic verification only works when a DB record exists.**
+  If the ingredient isn't in the database, or the DB record itself
+  is wrong, this mechanism can't catch it -- it corrects against the
+  DB, it doesn't validate the DB.
+- **Only Gemini is actually implemented.** OpenAI, Anthropic, and
+  DeepSeek are stubbed in the provider-agnostic interface but return
+  a clear "not configured" error rather than working -- this is 1 of
+  4 providers active, not 4 working options.
+- **Kubernetes testing is local only.** Verified: pod scheduling,
+  liveness/readiness probes, secret injection, rolling restarts.
+  Not tested: horizontal autoscaling, multi-node behavior, actual
+  cloud deployment.
