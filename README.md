@@ -71,3 +71,41 @@ python evals.py                  # full LLM eval set, requires GEMINI_API_KEY
 ## Status
 
 This is v3 of a four-part series. v4 adds LangGraph-based orchestration and an MCP interface.
+
+## v4 — Agent orchestration
+
+v4 adds a LangGraph agent on top of the v3 service, an MCP server
+exposing it as a tool, and a Kubernetes deployment.
+
+### What's new
+
+- **agent_graph.py** — multi-step flow: detect ingredients, look up
+  records, check for conflicts if 2+ ingredients are involved,
+  generate an answer, then verify it.
+- **Deterministic verification** — the LLM's `risk_level` is checked
+  against the database directly, not by asking a second LLM to judge
+  the first. If it's wrong, the DB value overrides it and confidence
+  drops. Tested in `tests/test_verification.py`.
+- **mcp_server.py** — exposes the agent as an MCP tool
+  (`check_ingredient_safety`), plus a second tool
+  (`ask_with_provider`) for comparing providers. Only Gemini is
+  implemented; OpenAI, Anthropic, and DeepSeek are stubbed and return
+  a clear error instead of failing silently.
+- **compare_v3_v4.py** — runs the same question set through v3's
+  single-call system and v4's agent. On the eval set used, v4 caught
+  ingredient conflicts v3 couldn't (v3 has no concept of "multiple
+  ingredients interacting"), which was the actual motivation for
+  adding orchestration here rather than a general assumption that
+  more steps means better answers.
+- **k8s/** — Kubernetes manifests, tested locally against Docker
+  Desktop's built-in cluster. See `DEPLOYMENT.md` for the local test
+  steps and the (not yet deployed) Azure plan.
+
+### Running the agent
+
+```bash
+python agent_graph.py          # direct test, two sample questions
+python compare_v3_v4.py         # v3 vs v4 comparison
+python test_mcp_client.py       # end-to-end MCP tool call
+```
+```
